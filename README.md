@@ -1,6 +1,6 @@
-# beat-detection-cplusplus
+# onset-detection-cplusplus
 
-由 C++ 实现的 Beat Detection 算法，可用于识别歌曲内的节拍点。
+由 C++ 实现的 Onset Detection 算法，可用于识别歌曲内的节拍点。
 
 目前算法版本为 v1.0，处于测试阶段，仅可识别 wav 格式的歌曲。通过测试的 wav 格式有: `44100Hz 16bit`，不保证其他格式能够正常运行。
 
@@ -29,3 +29,5 @@
 `wavfile::limit`: 识别节拍点时的识别限制，大于该限制的节拍点才会被识别。
 
 经测试，当 multiplier 为 1 时，一首三分钟的歌曲能识别出 2800 个节拍点，而为 1.5 时，仅能识别出 700 个节拍点。
+
+一个 40MB 的 wav 文件计算时占用运行内存大小 150MB，请合理分配您的运行内存。
